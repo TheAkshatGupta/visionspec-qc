@@ -22,6 +22,7 @@ pass_imgs = []
 defect_imgs = []
 
 for img in images:
+    
     xml_file = img.replace(".jpg", ".xml")
     xml_path = os.path.join(xml_folder, xml_file)
 
