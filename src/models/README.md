@@ -1,16 +1,17 @@
 # AI Model Development (Akshat)
 
 ## What I did
-- Built a CNN model from scratch for PCB defect classification (Pass/Defect)
-- Implemented Transfer Learning using MobileNetV2 for better performance
-- Created a training pipeline using ImageDataGenerator
-- Implemented Grad-CAM for visualizing defect regions
+- Built CNN model for PCB defect classification
+- Implemented MobileNetV2 using transfer learning
+- Created training pipeline
+- Trained model and achieved ~79% accuracy
+- Implemented Grad-CAM for defect visualization
 
 ## How I did
-- Used TensorFlow/Keras to design and train models
-- Loaded pretrained MobileNetV2 and replaced final layers for binary classification
-- Built a training script to load images and train the model
-- Applied Grad-CAM to highlight important regions in the image
+- Used TensorFlow/Keras for model building
+- Used ImageDataGenerator for preprocessing
+- Trained model on dataset (pass/defect)
+- Applied Grad-CAM to highlight defect regions
 
 ## Tools Used
 - TensorFlow / Keras
@@ -18,11 +19,12 @@
 - OpenCV
 
 ## Output
-- Model ready for training (pcb_defect_model.h5 will be generated after training)
-- Grad-CAM heatmap generation implemented
+- Trained model: pcb_defect_model.h5
+- Grad-CAM heatmap output generated
 
 ## Files
 - cnn_model.py
 - mobilenet_model.py
 - train_model.py
 - gradcam.py
+- test_gradcam.py
